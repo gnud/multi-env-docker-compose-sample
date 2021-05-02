@@ -71,3 +71,9 @@ docker-compose ps
 - Controlling outside env vars in docker -compose
 
 
+# Reference
+
+- https://pspdfkit.com/blog/2018/how-to-manage-multiple-system-configurations-using-docker-compose/
+
+
+- https://github.com/docker/awesome-compose/ (for the Go sample insipiration)
