@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+    backend1:
+        volumes:
+            - ./data/backend1/config:/config

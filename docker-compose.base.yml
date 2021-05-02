@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    backend1:
+        build: ../services/backend1/
+        ports:
+            - ${PORT_BACKEND1}:${PORT_BACKEND1_IN}
+        env_file:
+            - '.env'
