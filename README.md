@@ -77,3 +77,21 @@ docker-compose ps
 
 
 - https://github.com/docker/awesome-compose/ (for the Go sample insipiration)
+
+
+# TODOS
+
+- [ ] Separate the .env variables for each service in separate .env-{service}
+   - [ ] Find what to leave in the .env file after separation
+   - [ ] Ports in:out:inside
+   - [ ] Volumes paths
+   - [ ] Hosts
+   - [ ] Links paths
+   - [ ] Image version
+   - [ ] Labels
+   - [ ] Command arguments
+   - [ ] Network names?
+
+- [ ] Add examples
+   - [ ] Separated .env per service
+   - [ ] Prepare a video make a sample platform
