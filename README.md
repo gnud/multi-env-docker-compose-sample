@@ -2,6 +2,9 @@
 
 This is a demonstration of a Multi Docker Compose.
 
+The purpose of this repositoy is ongoing research on "Docker compose" architecture design for easier and elegant control over the services, without duplication.
+
+# Create a new project environment aka sample platform
 
 To create a new environment
 
@@ -60,15 +63,19 @@ cd platform-dev  # sample env
 docker-compose ps
 ```
 
-# Features
+# Features (desired)
 
 - Multi environment docker compose
 
-- Building an image
+- Building an image instructions
 
 - Controlling inside env vars
 
 - Controlling outside env vars in docker -compose
+
+- Structuring environment variables for easier control and maintaince
+
+- Multi stage Dockerfile builds
 
 
 # Reference
