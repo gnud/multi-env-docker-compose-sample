@@ -28,9 +28,12 @@ platform-new/
 ```
 
 In short:
-- We link the original docker-compose.base.yml
-- We create new .env file
-    - Inside each .env we can control the inside port and the outside port and other user configurable options
+
+- We link the original docker-compose.base.yml.
+
+- We create new .env file.
+
+   - Each .env can configure the inside/outside ports and other user configurable options.
 
 Each override has the example structure:
 
@@ -44,14 +47,15 @@ services:
             - ./data/backend3/config:/config
 ```
 
-We can create a data directory for each service an mount/bind few things.
-
 **Note**:
 
 - Each platform environment will not to be committed to GIT.
-- The platform environments will be created on the dev machine or production.
-- Their can be infinite number of environments on one machine/node as long as the port are different in each .env file
 
+- The platform environments will be created on the dev machine or production.
+
+- There can be an infinite number of environments on one machine/node as long as the ports are different in each .env file.
+
+- Having a data directory which can be mounted/binded to particular location inside the target service.
 
 ## Environment keys:
 
