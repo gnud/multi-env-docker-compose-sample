@@ -15,6 +15,16 @@ ln -s docker-compose.base.yml platform-new/docker-compose.yml
 touch platform-new/docker-compose.override.yml
 ```
 
+```bash
+platform-new/
+├── data
+│   └── backend1
+│       └── config
+│           └── main.yml
+├── docker-compose.override.yml
+└── docker-compose.yml -> ../docker-compose.base.yml
+```
+
 Basically we link the original docker base compose and we have new .env file for each platform environment.
 Inside each .env we can control the inside port and the outside port.
 
