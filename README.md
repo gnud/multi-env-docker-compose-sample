@@ -15,6 +15,8 @@ ln -s docker-compose.base.yml platform-new/docker-compose.yml
 touch platform-new/docker-compose.override.yml
 ```
 
+Tree view visualizing of the filesystem
+
 ```bash
 platform-new/
 ├── data
@@ -25,8 +27,10 @@ platform-new/
 └── docker-compose.yml -> ../docker-compose.base.yml
 ```
 
-Basically we link the original docker base compose and we have new .env file for each platform environment.
-Inside each .env we can control the inside port and the outside port.
+In short:
+- We link the original docker-compose.base.yml
+- We create new .env file
+    - Inside each .env we can control the inside port and the outside port and other user configurable options
 
 Each override has the example structure:
 
@@ -42,11 +46,14 @@ services:
 
 We can create a data directory for each service an mount/bind few things.
 
-Note: each platform environment will not to be committed to GIT.
-The platform environments will be created on the dev machine or production.
+**Note**:
+
+- Each platform environment will not to be committed to GIT.
+- The platform environments will be created on the dev machine or production.
+- Their can be infinite number of environments on one machine/node as long as the port are different in each .env file
 
 
-Environment keys:
+## Environment keys:
 
 - PORT_BACKEND1 is the outside port
 
